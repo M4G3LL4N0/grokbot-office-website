@@ -1,8 +1,8 @@
 # Publication Audit
 
-Status: **pre-publication verification**
+Status: **public repository; verified code release**
 Project: GrokBot Office website 0.1.0
-Target: `M4G3LL4N0/grokbot-office-website`
+Repository: https://github.com/M4G3LL4N0/grokbot-office-website
 
 ## Public boundary
 
@@ -14,13 +14,25 @@ The website has no deployment workflow. `NEXT_PUBLIC_SITE_URL` is optional and m
 
 The site describes an architecture and a sanitized role model. It does not claim live workers, paid usage, private account state, autonomous execution, or a deployed production URL. Role counts remain 134 conceptual, 3 reference supervisors, and 131 virtual.
 
-## Verification checklist
+## Verified release evidence
 
-- [x] Public README, license, security, contributing, roadmap, changelog, and audit
-- [x] Cross-links to both source repositories
-- [x] Sanitized workforce data and route smoke tests
-- [x] Ignore rules for local state, credentials, and deployment artifacts
-- [x] CI with frozen pnpm install, lint, typecheck, tests, and build
-- [ ] Dedicated public remote pushed and verified
-- [ ] GitHub Actions run verified on the pushed commit
-- [ ] Deployed origin intentionally not configured
+- Verified code commit: `57c102e5f10f00b7918a9d11115e8a8943528b5d`.
+- GitHub Actions `validate`: passed; run `https://github.com/M4G3LL4N0/grokbot-office-website/actions/runs/36159015159`.
+- `pnpm lint`: PASS.
+- `pnpm typecheck`: PASS.
+- `pnpm test`: 2 passed, 0 failed, 0 skipped.
+- `pnpm build`: PASS; 14 static routes generated.
+- `pnpm audit --prod --audit-level=high`: no known vulnerabilities found.
+- No deployment or paid provider call was used.
+
+## Release checklist
+
+- [x] Public README, license, security, contributing, roadmap, changelog, and audit.
+- [x] Cross-links to both source repositories.
+- [x] Sanitized workforce data and route smoke tests.
+- [x] Ignore rules for local state, credentials, and deployment artifacts.
+- [x] CI with frozen pnpm install, lint, typecheck, tests, and build.
+- [x] Dedicated public remote created, pushed, and verified.
+- [x] GitHub Actions validation passed on the verified code commit.
+- [ ] v0.1.0 release tag and GitHub release created from the final verified commit.
+- [x] Deployed origin intentionally not configured.
