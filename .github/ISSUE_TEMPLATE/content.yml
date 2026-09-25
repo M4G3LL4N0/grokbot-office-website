@@ -1,0 +1,15 @@
+name: Content or accessibility issue
+description: Report stale content, broken navigation, or an accessibility barrier.
+body:
+  - type: textarea
+    id: location
+    attributes:
+      label: Route or component
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Issue and expected behavior
+    validations:
+      required: true

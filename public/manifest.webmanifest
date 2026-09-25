@@ -1,0 +1,10 @@
+{
+  "name": "GrokBot Office",
+  "short_name": "GrokBot Office",
+  "description": "GrokBot should run your workforce, not be your entire workforce.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3f0e8",
+  "theme_color": "#111318",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

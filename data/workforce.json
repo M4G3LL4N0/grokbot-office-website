@@ -1,0 +1,133 @@
+{
+  "project": "GrokBot Office",
+  "version": "0.1.0",
+  "verifiedAtBuild": true,
+  "counts": {
+    "conceptualRoles": 134,
+    "referenceSupervisors": 3,
+    "virtualRoles": 131
+  },
+  "notice": "Reference configuration, not a requirement to create bots.",
+  "roles": [
+    {
+      "id": "01",
+      "name": "ChiefOfStaff",
+      "group": "Command",
+      "parent": "human",
+      "description": "Own attention, merge chiefs, and surface decisions.",
+      "persistence": "persistent candidate",
+      "defaultForm": "persistent candidate",
+      "skills": "intent, tradeoffs, final decision"
+    },
+    {
+      "id": "02",
+      "name": "IntelligenceChief",
+      "group": "Intelligence",
+      "parent": "ChiefOfStaff",
+      "description": "Own external intelligence, changes, anomalies, and opportunities.",
+      "persistence": "persistent candidate",
+      "defaultForm": "persistent candidate",
+      "skills": "research, synthesis, escalation"
+    },
+    {
+      "id": "03",
+      "name": "ProjectsChief",
+      "group": "Projects",
+      "parent": "ChiefOfStaff",
+      "description": "Know project states, blockers, dependencies, and next actions.",
+      "persistence": "persistent candidate",
+      "defaultForm": "persistent candidate",
+      "skills": "coordination, review, recovery"
+    },
+    {
+      "id": "04",
+      "name": "PersonalOfficeChief",
+      "group": "Personal office",
+      "parent": "ChiefOfStaff",
+      "description": "Coordinate personal logistics and planning with approval boundaries.",
+      "persistence": "reference only",
+      "defaultForm": "workflow",
+      "skills": "place retrieval, reminders, human confirmation"
+    },
+    {
+      "id": "05",
+      "name": "FamilyOfficeChief",
+      "group": "Family office",
+      "parent": "ChiefOfStaff",
+      "description": "Coordinate specialist workflows for assets, admin, and risk.",
+      "persistence": "reference only",
+      "defaultForm": "workflow",
+      "skills": "routing, approvals, review"
+    },
+    {
+      "id": "06",
+      "name": "ResearchChief",
+      "group": "Research",
+      "parent": "ChiefOfStaff",
+      "description": "Turn questions into minimum-cost research plans.",
+      "persistence": "persistent candidate",
+      "defaultForm": "workflow",
+      "skills": "query design, source checks, synthesis"
+    },
+    {
+      "id": "07",
+      "name": "AutomationChief",
+      "group": "Automation",
+      "parent": "ChiefOfStaff",
+      "description": "Coordinate repeatable software and operational automations.",
+      "persistence": "persistent candidate",
+      "defaultForm": "workflow",
+      "skills": "workflow design, monitoring, recovery"
+    },
+    {
+      "id": "08",
+      "name": "CostOptimizer",
+      "group": "Economics",
+      "parent": "ChiefOfStaff",
+      "description": "Find lower-cost paths without weakening safety or evidence.",
+      "persistence": "ephemeral",
+      "defaultForm": "skill",
+      "skills": "routing math, cache policy, usage review"
+    },
+    {
+      "id": "09",
+      "name": "VerificationChief",
+      "group": "Verification",
+      "parent": "ChiefOfStaff",
+      "description": "Challenge outputs and require evidence before reuse.",
+      "persistence": "persistent candidate",
+      "defaultForm": "workflow",
+      "skills": "tests, evidence review, escalation"
+    },
+    {
+      "id": "10",
+      "name": "SecurityChief",
+      "group": "Security",
+      "parent": "ChiefOfStaff",
+      "description": "Protect identities, scopes, and approval boundaries.",
+      "persistence": "persistent candidate",
+      "defaultForm": "workflow",
+      "skills": "threat review, redaction, incident response"
+    },
+    {
+      "id": "133",
+      "name": "LocationIntelligence",
+      "group": "Location intelligence",
+      "parent": "ChiefOfStaff",
+      "description": "Retrieve approved place context and calculate useful options.",
+      "persistence": "ephemeral",
+      "defaultForm": "skill",
+      "skills": "place retrieval, deterministic facts, human confirmation"
+    },
+    {
+      "id": "134",
+      "name": "GrokBotEcosystemScout",
+      "group": "Ecosystem",
+      "parent": "IntelligenceChief",
+      "description": "Discover and inspect external capability candidates without executing them.",
+      "persistence": "ephemeral",
+      "defaultForm": "skill",
+      "skills": "static inspection, risk classification, approval"
+    }
+  ]
+}

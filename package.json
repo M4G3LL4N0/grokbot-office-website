@@ -1,0 +1,38 @@
+{
+  "name": "grokbot-office-website",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/M4G3LL4N0/grokbot-office-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/M4G3LL4N0/grokbot-office-website/issues"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "pnpm generate:data",
+    "build": "next build",
+    "start": "next start",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test",
+    "generate:data": "node scripts/generate-workforce.mjs"
+  },
+  "dependencies": {
+    "next": "16.3.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.4",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "autoprefixer": "10.4.21",
+    "postcss": "8.5.6",
+    "tailwindcss": "3.4.17",
+    "typescript": "5.9.3"
+  },
+  "packageManager": "pnpm@12.4.2"
+}
