@@ -34,5 +34,6 @@ The site describes an architecture and a sanitized role model. It does not claim
 - [x] CI with frozen pnpm install, lint, typecheck, tests, and build.
 - [x] Dedicated public remote created, pushed, and verified.
 - [x] GitHub Actions validation passed on the verified code commit.
-- [ ] v0.1.0 release tag and GitHub release created from the final verified commit.
+- [x] v0.1.0 release tag and GitHub release created from verified commit `ab3b4ae859ee938fe15640ba9a000d243dda4509`.
+- Release: https://github.com/M4G3LL4N0/grokbot-office-website/releases/tag/v0.1.0
 - [x] Deployed origin intentionally not configured.
