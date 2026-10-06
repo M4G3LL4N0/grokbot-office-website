@@ -1,5 +1,21 @@
 # GrokBot Office Website
 
+<p align="center">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero/hero-reduced.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/hero/hero-light.svg">
+    <img src="assets/hero/hero-motion.svg" alt="grokbot-office-website — animated project plate showing request &rarr; candidate routes &rarr; policy select. Motion depicts this project's real state transition." width="100%">
+  </picture>
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero/computational-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/hero/computational-light.svg">
+    <img src="assets/hero/computational-motion.svg" alt="State machine: request &rarr; candidate routes &rarr; policy select." width="100%">
+  </picture>
+</p>
+
 > **GrokBot should run your workforce. It shouldn't be your entire workforce.**
 
 This repository contains the public Next.js website for the GrokBot Office workforce architecture. It explains how a small persistent GrokBot supervisor core, AgentOS, and replaceable workers divide responsibility.
